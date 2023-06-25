@@ -6,6 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 import pymongo
 import json
 import pyshorteners
+import config
 
 
 import sys
@@ -241,6 +242,5 @@ async def on_message(message):
             await message.channel.send("Sorry, just checked and no cheaper prices for your tracked games!")
 
 
-client.run("MTExOTcyMzEwNTkyMTgxMDUyNQ.Glpkpk.JTzaQRq6bXNhXF0E93WNwuPbSNImv-_iDZQS8s")
+client.run(config.API_KEY)
 
-#   kDcliSHQ633PrL5BubUwCbqHMbsZbmOKTZ4XDkP7ZaAq9JdWyuAaDyHHfWSn
